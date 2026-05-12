@@ -2,24 +2,24 @@
 <odoo>
     <!-- Vista Tree -->
     <record id="view_practice_student_tree" model="ir.ui.view">
-        <property name="name">practice.student.tree</property>
-        <property name="model">practice.student</property>
-        <property name="arch" type="xml">
-            <tree string="Estudiantes">
+        <field name="name">practice.student.tree</field>
+        <field name="model">practice.student</field>
+        <field name="arch" type="xml">
+            <list string="Estudiantes">
                 <field name="name"/>
                 <field name="age"/>
                 <field name="email"/>
                 <field name="enrollment_date"/>
                 <field name="active" widget="boolean_toggle"/>
-            </tree>
-        </property>
+            </list>
+        </field>
     </record>
 
     <!-- Vista Form -->
     <record id="view_practice_student_form" model="ir.ui.view">
-        <property name="name">practice.student.form</property>
-        <property name="model">practice.student</property>
-        <property name="arch" type="xml">
+        <field name="name">practice.student.form</field>
+        <field name="model">practice.student</field>
+        <field name="arch" type="xml">
             <form string="Estudiante">
                 <sheet>
                     <group>
@@ -40,20 +40,20 @@
                     </notebook>
                 </sheet>
             </form>
-        </property>
+        </field>
     </record>
 
     <!-- Acción -->
     <record id="action_practice_student" model="ir.actions.act_window">
-        <property name="name">Estudiantes</property>
-        <property name="type">ir.actions.act_window</property>
-        <property name="res_model">practice.student</property>
-        <property name="view_mode">tree,form</property>
-        <property name="help" type="html">
+        <field name="name">Estudiantes</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">practice.student</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
                 Cree su primer estudiante.
             </p>
-        </property>
+        </field>
     </record>
 
     <!-- Menús -->
